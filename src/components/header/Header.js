@@ -3,6 +3,9 @@ import HeaderCss from "./header.module.css";
 import Image from "next/image";
 import { logo } from "@/utils/imageImports";
 import Nav from "../Nav";
+import { ImSearch } from 'react-icons/im';
+import { VscAccount } from 'react-icons/vsc';
+import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Header = () => {
   return (
@@ -23,11 +26,14 @@ const Header = () => {
           <Nav />
         </div>
 
-        <div className="flex alignCenter">
+        <div className={`flex alignCenter ${HeaderCss.gapCard}`}>
           <from className={HeaderCss.search}>
             <input className={HeaderCss.searchInput} type="text" placeholder={"Search Product"} />
-            <button className={HeaderCss.button}>Search</button>
+            <button type="submit" className={HeaderCss.button}><ImSearch/></button>
           </from>
+          <button className={`${HeaderCss.buttonCard}`}><VscAccount /></button>
+          <button className={`${HeaderCss.buttonCard}`}><AiOutlineHeart /></button>
+          <button className={`${HeaderCss.buttonCard}`}><AiOutlineShoppingCart /></button>
         </div>
         
       </div>
