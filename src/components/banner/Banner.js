@@ -1,7 +1,6 @@
 import React from 'react'
 import "react-multi-carousel/lib/styles.css";
 import Carousel from "react-multi-carousel";
-import Image from 'next/image';
 import BannerCss from "./banner.module.css";
 import { sliderData } from '@/utils/jsonData';
 
@@ -23,6 +22,8 @@ const Banner = () => {
             slidesToSlide: 1
         }
     };
+
+    console.log(sliderData)
     return (
         <>
             <section className={BannerCss.banner}>
@@ -33,10 +34,10 @@ const Banner = () => {
                     infinite={true}
                 >
                     {
-                        sliderData && sliderData.map((slide, i) => {
+                        sliderData && sliderData.map((slide) => {
                             console.log(slide.image.default.src)
                             return (
-                                <div style={{ background: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("${slide.image.default.src}")` }} key={i} className={`flex alignCenter justifyCenter ${BannerCss.slide}`}>
+                                <div style={{ background: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("${slide.image.default.src}")` }} key={slide._id} className={`flex alignCenter justifyCenter ${BannerCss.slide}`}>
                                     <div className="container textCenter">
                                         <h1>Luxe Swimwear</h1>
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident pariatur quod quo deserunt praesentium perspiciatis voluptatem dolore dignissimos beatae magnam ad ut cumque quisquam blanditiis hic necessitatibus, impedit nulla unde.</p>
