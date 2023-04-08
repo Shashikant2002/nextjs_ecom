@@ -2,7 +2,7 @@ import React from "react";
 import HeaderCss from "./header.module.css";
 import Image from "next/image";
 import { logo } from "@/utils/imageImports";
-import Nav from "../Nav";
+import Nav from "../nav/Nav";
 import { ImSearch } from 'react-icons/im';
 import { VscAccount } from 'react-icons/vsc';
 import { AiOutlineHeart, AiOutlineShoppingCart } from 'react-icons/ai';
