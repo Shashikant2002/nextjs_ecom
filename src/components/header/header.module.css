@@ -72,7 +72,7 @@
 
 @media (max-width: 550px) {
     .inPhone {
-        position: absolute;
+        position: fixed;
         z-index: 99999999999999;
         top: 50vh;
         left: -100%;
