@@ -1,0 +1,53 @@
+.nav {
+    margin-left: 20px;
+}
+
+.ul {
+    gap: 10px;
+}
+.close{
+    display: none;
+}
+
+@media (max-width: 950px) {
+    .ul {
+        gap: 7px;
+    }
+}
+
+@media (max-width: 770px) {
+    .navLink {
+        color: #fff;
+    }
+    .close{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--white);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .nav {
+        position: absolute;
+        height: 100vh;
+        z-index: 9999999;
+        background: #111;
+        top: 0;
+        left: -100%;
+        margin: 0;
+        max-width: 400px;
+        width: 100%;
+        padding-left: 70px;
+        padding-top: 100px;
+        align-items: start;
+        transition: .5s;
+    }
+    .showNav{
+        left: 0;
+    }
+
+    .ul {
+        flex-direction: column;
+    }
+}

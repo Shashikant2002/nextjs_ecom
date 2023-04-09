@@ -1,41 +1,48 @@
-.header{
+.header {
     width: 100%;
     float: left;
     background: var(--white);
 }
 
-.upHead{
+.upHead {
     background: var(--black);
     width: 100%;
     padding: 10px 0;
 }
 
-.mainHeader{
+.mainHeader {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-.logo{
+
+.logo {
     width: 100px;
 }
 
-.search{
+.search {
     width: 100%;
     position: relative;
 }
-.searchInput{
+
+.searchInput {
     min-width: 300px;
 }
 
-.button{
+.button {
     position: absolute;
     right: 0;
     height: 100%;
 }
-.gapCard{
+
+.gapCard {
     gap: 10px;
 }
 
-.buttonCard{
+.faBar {
+    display: none;
+}
+
+.buttonCard {
     background: transparent;
     color: var(--white);
     background: var(--black);
@@ -47,13 +54,38 @@
 
 
 @media (max-width: 950px) {
-    .logo{
+    .logo {
         width: 60px;
     }
-    .searchInput{
+
+    .searchInput {
         min-width: 180px;
     }
 }
+
 @media (max-width: 770px) {
-    
+    .faBar {
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .inPhone {
+        position: absolute;
+        z-index: 99999999999999;
+        top: 50vh;
+        left: -100%;
+        width: 100%;
+        max-width: 350px;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        background: var(--white);
+        border-radius: 5px;
+        transition: .5s;
+    }
+    .showInPhone{
+        left: 25px;
+    }
 }

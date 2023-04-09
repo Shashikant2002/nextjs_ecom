@@ -1,0 +1,9 @@
+.heading {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+    .center550 {
+        justify-content: center;
+    }
+}

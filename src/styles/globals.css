@@ -12,6 +12,7 @@
   --LightBlack: #00000031;
   --white: #fff;
   --red: #ed0006;
+  --darkLight: #f7f7f7;
 
   --jostFont: "Jost"
 }
@@ -54,6 +55,10 @@ body {
   justify-content: space-between;
 }
 
+.flexWrap{
+  flex-wrap: wrap;
+}
+
 .colorRed {
   color: var(--red);
 }
@@ -85,6 +90,11 @@ button {
   color: var(--white);
   font-family: var(--jostFont);
   cursor: pointer;
+  transition: .5s;
+}
+button:hover{
+  background: var(--LightBlack);
+  color: var(--black);
 }
 
 a {
@@ -126,6 +136,19 @@ h3{
   font-family: 'Marcellus', serif;
   font-weight: 400;
   color: var(--white);
+}
+
+h4{
+  font-size: 1.5rem;
+  font-family: var(--jostFont), serif;
+  font-weight: 400;
+  color: var(--white);
+}
+h5{
+  font-size: 1.3rem;
+  font-family: var(--jostFont), serif;
+  font-weight: 400;
+  color: var(--black);
 }
 
 @media (max-width: 770px) {
