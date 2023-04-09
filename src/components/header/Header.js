@@ -9,7 +9,7 @@ import { VscAccount } from "react-icons/vsc";
 import { AiOutlineHeart, AiOutlineShoppingCart } from "react-icons/ai";
 
 const Header = () => {
-  const [nav, setNav] = useState(true);
+  const [nav, setNav] = useState(false);
   const togleNav = () => {
     setNav(!nav);
   };
