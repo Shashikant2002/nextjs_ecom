@@ -23,11 +23,15 @@ h2.heading{
 
 .prodCard{
     width: 300px;
-    /* margin-top: 10px; */
+    text-align: left;
+    background: #0000000d;
+    cursor: pointer;
+    transition: .5s;
 }
 .thumb{
     width: 100%;
     height: 300px;
+    transition: .5s;
     /* object-fit: contain; */
 }
 
@@ -46,12 +50,41 @@ h2.heading{
     margin-top: 10px;
 }
 
-.prodCard{
-    text-align: left;
-    background: #0000000d;
-    /* margin: 10px 10px; */
-}
 .content{
     padding: 20px;
     width: 100%;
+}
+.prodCard:hover .thumb{
+    /* border: 1px solid green; */
+    transform: scaleX(-1);
+}
+.icons{
+    gap: 10px;
+    height: 100%;
+}
+.cardHover{
+    transition: .5s;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blackTransprant);
+    opacity: 0;
+}
+.thumbIcons:hover{
+    background: var(--white);
+}
+.thumbIcons{
+    color: var(--white);
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+}
+.prodCard:hover .cardHover{
+    opacity: 1;
+}
+.Prodimage{
+    position: relative;
 }

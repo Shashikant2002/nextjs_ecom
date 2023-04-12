@@ -14,7 +14,8 @@
   --red: #ed0006;
   --darkLight: #f7f7f7;
 
-  --jostFont: "Jost"
+  --jostFont: "Jost";
+  --blackTransprant: #00000066;
 }
 
 html,
