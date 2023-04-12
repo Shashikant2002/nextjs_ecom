@@ -18,27 +18,40 @@ h2.heading{
 .content{
     border: 1px solid var(--white);
     padding: 60px 0;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .prodCard{
     width: 300px;
-    margin-top: 10px;
+    /* margin-top: 10px; */
 }
 .thumb{
     width: 100%;
     height: 300px;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
 .title{
     color: var(--black);
-    margin-top: 10px;
 }
 .strikePrice{
     color: rgba(33, 33, 33, 0.6);
 }
 
+.price{
+    color: var(--black);
+}
+
 .buttonCart{
     margin-top: 10px;
+}
+
+.prodCard{
+    text-align: left;
+    background: #0000000d;
+    /* margin: 10px 10px; */
+}
+.content{
+    padding: 20px;
+    width: 100%;
 }
