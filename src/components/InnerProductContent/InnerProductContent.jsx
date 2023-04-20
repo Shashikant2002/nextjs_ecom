@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import innerProduct from "./productInner.module.css";
 import Link from "next/link";
 import { BsFacebook, BsTwitter, BsLinkedin } from "react-icons/bs";
@@ -6,8 +6,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import { reviews } from "@/utils/jsonData";
+import { AiFillHeart } from 'react-icons/ai';
 
 const InnerProductContent = ({ data }) => {
+  const [qut, setQut] = useState(0);
+
   const tabContent = (ind) => {
     const tabs = document.getElementsByClassName("tabContentForTar");
     const butoonTab = document.getElementsByClassName("butoonTab");
@@ -20,7 +23,7 @@ const InnerProductContent = ({ data }) => {
   };
 
   useEffect(() => {
-    tabContent(2);
+    tabContent(0);
   }, []);
 
   return (
@@ -123,7 +126,17 @@ const InnerProductContent = ({ data }) => {
                 </button>
               </p>
             </div>
-            <div className={`${innerProduct.qutCartWish}`}></div>
+            <div className={`${innerProduct.qutCartWish} flex`}>
+              <div className={`${innerProduct.quentity} flex`}>
+                <button onClick={() => setQut(qut - 1)}>-</button>
+                <input value={qut} className="textCenter" type="text" readOnly={true} />
+                <button onClick={() => setQut(qut + 1)}>+</button>
+              </div>
+
+              <button>Add to Cart</button>
+
+              <button><AiFillHeart /></button>
+            </div>
             <p
               className={`${innerProduct.tagsProduct} colorDark flex alignCenter`}
             >
