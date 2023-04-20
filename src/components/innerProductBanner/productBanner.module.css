@@ -1,0 +1,7 @@
+.innerBanner{
+    width: 100%;
+    float: left;
+    padding: 200px 0;
+    background: var(--LightBlack);
+    text-align: center;
+}

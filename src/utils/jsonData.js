@@ -5,6 +5,7 @@ import {
   product_1,
   product_2,
   product_3,
+  profReview,
   slider_1,
   slider_2,
   slider_3,
@@ -187,5 +188,78 @@ export const product = [
     image: product_1,
     price: "500",
     regPrice: "1200",
+  },
+];
+
+export const reviews = [
+  {
+    _id: "1",
+    profime: profReview,
+    title: "The Item Is Very Comfortable And Soft!",
+    description:
+      "Desectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ma na alihote pare ei gansh es gan quim veniam, quis nostr udg exercitation ullamco laboris nisi ut aliquip",
+    star: 4,
+    name: "James Anderson",
+    date: "Sep 16, 2022",
+  },
+  {
+    _id: "2",
+    profime: profReview,
+    title: "The Item Is Very Comfortable And Soft!",
+    description:
+      "Desectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ma na alihote pare ei gansh es gan quim veniam, quis nostr udg exercitation ullamco laboris nisi ut aliquip",
+    star: 4,
+    name: "James Anderson",
+    date: "Sep 16, 2022",
+  },
+  {
+    _id: "3",
+    profime: profReview,
+    title: "The Item Is Very Comfortable And Soft!",
+    description:
+      "Desectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ma na alihote pare ei gansh es gan quim veniam, quis nostr udg exercitation ullamco laboris nisi ut aliquip",
+    star: 4,
+    name: "James Anderson",
+    date: "Sep 16, 2022",
+  },
+  {
+    _id: "4",
+    profime: profReview,
+    title: "The Item Is Very Comfortable And Soft!",
+    description:
+      "Desectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ma na alihote pare ei gansh es gan quim veniam, quis nostr udg exercitation ullamco laboris nisi ut aliquip",
+    star: 4,
+    name: "James Anderson",
+    date: "Sep 16, 2022",
+  },
+  {
+    _id: "5",
+    profime: profReview,
+    title: "The Item Is Very Comfortable And Soft!",
+    description:
+      "Desectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ma na alihote pare ei gansh es gan quim veniam, quis nostr udg exercitation ullamco laboris nisi ut aliquip",
+    star: 4,
+    name: "James Anderson",
+    date: "Sep 16, 2022",
+  },
+  {
+    _id: "6",
+    profime: profReview,
+    title: "The Item Is Very Comfortable And Soft!",
+    description:
+      "Desectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ma na alihote pare ei gansh es gan quim veniam, quis nostr udg exercitation ullamco laboris nisi ut aliquip",
+    star: 4,
+    name: "James Anderson",
+    date: "Sep 16, 2022",
+  },
+  {
+    _id: "7",
+    profime: profReview,
+    title: "The Item Is Very Comfortable And Soft!",
+    description:
+      "Desectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore ma na alihote pare ei gansh es gan quim veniam, quis nostr udg exercitation ullamco laboris nisi ut aliquip",
+    star: 4,
+    name: "James Anderson",
+    date: "Sep 16, 2022",
   },
 ];

@@ -3,6 +3,7 @@ import CardCss from "./card.module.css";
 import Image from "next/image";
 import { BsFillHeartFill, BsArrowsMove } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
+import Link from "next/link";
 
 const ProductCard = ({ slide }) => {
   return (
@@ -25,7 +26,7 @@ const ProductCard = ({ slide }) => {
           />
         </div>
         <div className={CardCss.content}>
-          <h5 className={CardCss.title}>{slide.heading}</h5>
+          <Link href={`/product/${slide._id}`}><h5 className={CardCss.title}>{slide.heading}</h5></Link>
           <p className={CardCss.price}>
             <strike className={CardCss.strikePrice}>₹{slide.regPrice}</strike>{" "}
             <span>

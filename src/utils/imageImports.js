@@ -10,3 +10,5 @@ export const category_3 = require('../../public/image/category_3.jpg')
 export const product_1 = require('../../public/image/prod_1.jpg')
 export const product_2 = require('../../public/image/prod_2.jpg')
 export const product_3 = require('../../public/image/prod_3.jpg')
+
+export const profReview = require('../../public/image/profReview.jpg')

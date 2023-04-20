@@ -13,6 +13,8 @@
   --white: #fff;
   --red: #ed0006;
   --darkLight: #f7f7f7;
+  --paraColor: rgba(33, 33, 33, 0.6);
+  --green: #057805;
 
   --jostFont: "Jost";
   --blackTransprant: #00000066;
@@ -59,11 +61,28 @@ body {
 .flexWrap{
   flex-wrap: wrap;
 }
-
 .colorRed {
   color: var(--red);
 }
 
+.colorGreen{
+  color: var(--green);
+}
+.colorDark{
+  color: var(--black);
+  font-weight: 500;
+}
+.colorPata{
+  color: var(--paraColor);
+}
+
+b{
+  font-weight: 800;
+}
+
+textarea{
+  font-size: 16px;
+}
 input {
   outline: none;
   border: none;
@@ -71,6 +90,7 @@ input {
   padding: 5px 10px;
   width: 100%;
   font-family: var(--jostFont);
+  font-size: 16px;
 }
 
 img {
@@ -82,6 +102,7 @@ img {
 
 svg {
   display: flex;
+  font-size: 1.3rem;
 }
 
 button {
@@ -116,8 +137,11 @@ li {
 p {
   color: var(--white);
   font-size: 16px;
+  font-weight: 500;
 }
-
+p>b{
+  font-weight: 600 !important;
+}
 h1 {
   font-size: 5rem;
   color: var(--white);
@@ -150,6 +174,28 @@ h5{
   font-family: var(--jostFont), serif;
   font-weight: 400;
   color: var(--black);
+}
+
+.carousel .slide .legend,
+.carousel-status{
+  display: none;
+}
+
+.carousel .slide img {
+  height: 370px;
+  object-fit: contain;
+}
+.carousel .thumb img {
+  height: 45px;
+  object-fit: contain;
+}
+.carousel .thumb{
+  width: 50px !important;
+  cursor: pointer;
+}
+
+.none{
+  display: none !important;
 }
 
 @media (max-width: 770px) {
