@@ -29,7 +29,7 @@ const InnerProductContent = ({ data }) => {
   return (
     <>
       <div className={`${innerProduct.innerProduct} commonSec`}>
-        <div className="container flex">
+        <div className={`${innerProduct.containerMainInner} container flex`}>
           <div className={`${innerProduct.image}`}>
             <Carousel showIndicators={false}>
               <div>
