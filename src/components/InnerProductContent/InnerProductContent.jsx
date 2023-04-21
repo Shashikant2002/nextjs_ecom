@@ -65,10 +65,10 @@ const InnerProductContent = ({ data }) => {
                 }
               </h5>
             </div>
-            <h3 className={`${innerProduct.name}`}>
+            <h2 className={`${innerProduct.name}`}>
               Men’s blue cotton t-shirt
-            </h3>
-            <h3 className={`${innerProduct.price}`}>$39</h3>
+            </h2>
+            <h2 className={`${innerProduct.price}`}>$39</h2>
             <div
               className={`${innerProduct.reviewStock} flex justifySpaceBetween alignCenter`}
             >
